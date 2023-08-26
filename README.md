@@ -96,24 +96,30 @@ UsersTable
 __<font color="green">http:// Anime.co.jp/sales/{group_id}</font>__
   
 「パスパラメータ」は __<font color="red">特別なもの（画像など）を表示したいときに必要になります。</font>__　　
-  
-__<font color="blue">//IsonoチームのSalesTableは「１」</font>__  
+
+ <br>
+
+__<font color="blue">IsonoチームのSalesTableは「１」</font>__  
 __<font color="green">http:// Anime.co.jp/sales/1</font>__  
 もし、メンバー一覧を画面に表示したい場合は、下記のURLとする。 __<font color="red">(表示)</font>__  
 __<font color="green">http:// Anime.co.jp/sales/1/members</font>__  
 「クエリパラメータ」は __<font color="red">特定のもの（画面など）に条件を加える場合に必要になります。</font>__  
+
+<br>
 
 例：上記のメンバー一覧から特定の人を検索したい場合（今回はID検索と想定）  
 「wakame」の検索をします。__<font color="red">（条件の追加）</font>__  
   
 __<font color="green">http:// Anime.co.jp/sales/1/members?</font>__ __<font color="red">id=3</font>__  
   
-  __パスパラメータ　特定のものを判別する際に必要__  
-  __クエリパラメータ 特定のものに条件を追加する際に必要__  
+<br>
+
+  ## __パスパラメータ　:特定のものを判別する際に必要__  
+  ## __クエリパラメータ :特定のものに条件を追加する際に必要__  
   
-  
-  
-  
+<br>
+<br>
+<br>    
   
 # <a id="section3">__3.HTTPメソッドとは何か</a>__
 
