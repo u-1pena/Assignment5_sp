@@ -119,38 +119,59 @@ __<font color="green">http:// Anime.co.jp/sales/1/members?</font>__ __<font colo
 
 ## HTTPメソッドとは、対象のリソースに対して「何をしたいか」を支持する。  
 HTTPメソッドにはおおまかにGET、POST、PUT、PATCH、DELETEがある。  
+
+<br>
+
+***
   
 ## __GETについて__  
-***
+
+<br>
 
 URLで指定した情報を要求しURLがファイル名のときはそのファイルの中身を、プログラム名のときはそのプログラムの出力を返す。  
   
 <font color="green">例：googleでjavaについて検索した。</font> __<font color="red">（googleでjavaについて情報を要求した。）</font>__  
 GETメソッドはURLに追記されて値を送ります。（公開されている）
 
+***
+
 ## __POSTについて__  
-***  
+
+<br>
+
 URLで指定した情報を送り内容をBody部に格納する。  
   
 <font color="green">例：Amazonでクレジットカードにてカード情報を入力した。</font> __<font color="red">（Amazonでカード情報を値の見えないwebサーバーに送った。）</font>__  
 POSTに関しては要求を封筒に入れて送信する。開封しないと見えない（非公開）  
 
+<br>
   
-## GETとPOSTの違い
-***
+## __GETとPOSTの違い__  
+
+<br>
+
 __<font color="red">GETメソッドはURLの後ろに値が表示されます。</font>__  
 __<font color="red">POSTメソッドは値を見えないところに隠して送りますのでその為、URLには表示されません。</font>__  
 
+<br>  
+
 ## __PUTについて__  
-***  
+<br>  
+
 情報を置き換える。POSTはリソースが追加されるが、PUTは既存のデータが上書きされる。
 
+<br>
+
+***
+
 ## __PATCHについて__  
-***  
+<br>
+
 リソースの部分置き換え。修正。  
+
+***
   
-## PUTとPATCHの違い　　
-***  
+## __PUTとPATCHの違い__　　
 例:  
 ```
 {  
@@ -161,8 +182,9 @@ __<font color="red">POSTメソッドは値を見えないところに隠して�
   "state" : Tokyo  
 }  
 ```
-***
+<br>
   
+
 __PUTリクエストの場合__  
 ```
 { 
@@ -171,8 +193,11 @@ __PUTリクエストの場合__
 ```  
   
 __<font color="green">完全にデータが上書きされ、LastNameやageといった情報も消えてしまう。</font>__  
+
 ***
-  
+
+<br>
+
 __PATCHリクエストの場合__  
 ```
 {  
@@ -185,17 +210,29 @@ __PATCHリクエストの場合__
 ``` 
 
 __<font color="green">データの一部が上書きされ、LastNameやageといった情報はそのまま。</font>__  
-***
-  
+
+<br>
 
 ## __DELETEについて__  
-***  
+
+<br>
+
 DELETEメソッドとは、名の通り削除を求めるもの。通常は認証システムと合わせて席の権限を持つ利用者のみに許可される。
 
-# __<a id="section4">4.HTTPステータスコードについて</a>__  
+<br>
+<br>
+<br>
+<br>
+
+# __<a id="section4">4.HTTPステータスコードについて</a>__ 
+
+<br>
+
 __HTTPステータスコードとは、HTTPレスポンスに含まれるWebサーバーの処理結果を表現する３桁の数字のことを指す。__  
 Webサーバーからの返事を表すコードです。要求にたいして処理できなかったり、エラーなどをコードで返します。  
-  
+
+<br>
+
  ## __200 OK__  
  ***  
  __「OK」です。<font color="green">リクエストは正常に処理できた。</font>__  
@@ -260,7 +297,6 @@ __<font color="red">HTTPリクエストヘッダ</font>__
 |User-Agent| ユーザーが利用しているブラウザの種類やOS情報|
 |Referer| 前のWebページのアドレスを表示               |
 |Accept | 受け取り希望のデータの種類をサーバに通知（画像の種類や言語、文字コードなど）|  
-| | |
 
   
 __<font color="blue">HTTPリクエストメッセージボディ</font>__  
